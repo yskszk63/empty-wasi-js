@@ -1,4 +1,4 @@
-declare class EmptyWasi {
+export declare class EmptyWasi {
     constructor({}: {});
 
     getImports(module: WebAssembly.Module): WebAssembly.Imports;
