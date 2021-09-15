@@ -1,4 +1,4 @@
-import { EmptyWasi } from "../empty-wasi.js";
+import { EmptyWasi } from "empty-wasi";
 import fs from "fs";
 
 (async () => {

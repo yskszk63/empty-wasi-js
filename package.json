@@ -1,13 +1,16 @@
 {
   "name": "empty-wasi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Empty WASI implementation.",
   "type": "module",
   "module": "./empty-wasi.js",
   "types": "./empty-wasi.d.ts",
+  "exports": {
+    "import": "./empty-wasi.js"
+  },
   "scripts": {
     "test": "npm run prepare && make -C ./tests",
-    "prepare": "rollup -c"
+    "prepare": "esbuild ./src/index.ts --bundle --outfile=empty-wasi.js --format=esm --minify"
   },
   "repository": {
     "type": "git",
@@ -24,8 +27,6 @@
   },
   "homepage": "https://github.com/yskszk63/empty-wasi-js#readme",
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.5",
-    "rollup": "^2.56.3",
-    "rollup-plugin-dts": "^4.0.0"
+    "esbuild": "^0.12.28"
   }
 }

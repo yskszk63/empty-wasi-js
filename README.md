@@ -2,6 +2,8 @@
 
 Empty WASI implementation.
 
+No I/O supported. But simple.
+
 ## Usage
 
 ```javascript
