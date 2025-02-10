@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/yskszk63/empty-wasi-js#readme",
   "devDependencies": {
-    "esbuild": "^0.12.28"
+    "esbuild": "^0.25.0"
   }
 }
